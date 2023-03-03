@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  width: 100%;
+  height: 10vh;
+  background-color: aquamarine;
+}
+
+.header > h1 {
+  color: blue;
+  font-size: 100px;
+  vertical-align: top;
+  display: inline-block;
+}
+
+.header > a {
+  display: none;
+}
+
+.header > .profile {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: white;
+  position: relative;
+  left: 45%;
+  top: 15%;
+  display: inline-block;
+}
+
+.main {
+  width: 100%;
+  height: 90vh;
+  background-color: lightsalmon;
+}
+
+.nav {
+  display: inline-block;
+  background-color: darkgreen;
+  height: 100%;
+  width: 20%;
+  padding: 5px;
+  vertical-align: top;
+}
+
+.section {
+  height: 20%;
+  background-color: lightgreen;
+  margin-bottom: 5px;
+}
+
+.news {
+  display: inline-block;
+  background-color: lightsalmon;
+  width: 79%;
+}
+
+.new {
+  width: 100%;
+  height: 20vh;
+  background-color: white;
+  margin-bottom: 10px;
+}
+
+.new > h2 {
+  font-size: 75px;
+}
+
+.new > p {
+  display: none;
+}
+
+.footer {
+  display: none;
+}
+
+/* PC */
+@media (min-device-width: 391px) {
+  .header {
+    height: 30vh;
+  }
+
+  .header > a {
+    position: relative;
+    left: 95%;
+    top: 30%;
+    display: block;
+  }
+  
+  .header > .profile {
+    display: none;
+  }
+
+  .main {  
+    height: 60vh;
+  }
+
+  .nav {
+    display: block;
+    height: 20%;
+    width: 100%;
+  }
+
+  .section {
+    width: 20%;
+    height: 100%;
+    display: inline-block;
+  }
+
+  .news {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .new {
+    height: 100%;
+  }
+
+  .new > h2 {
+    font-size: 24px;
+  }
+
+  .new > p {
+    display: block;
+  }
+
+  .footer {
+    width: 100%;
+    height: 10vh;
+    color: white;
+    background-color: black;
+    display: block;
+  }
+}

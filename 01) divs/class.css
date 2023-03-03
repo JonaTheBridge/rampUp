@@ -1,0 +1,82 @@
+body {
+  margin: 0;
+}
+
+div {
+  height: 100px;
+  width: 100px;
+  border: solid 1px black;
+  display: inline-block;
+  vertical-align: top;
+}
+
+#idA {
+  border: dashed 2px red;
+}
+
+#idB {
+  border-style: dotted;
+  border-width: 5px;
+  border-color: blue;
+}
+
+.classA {
+  border: double 10px orange;
+}
+
+.classB {
+  border: solid 5px green;
+  color: darkgreen;
+}
+
+.big {
+  height: 500px;
+  width: 500px;
+  display: block;
+  background-color: rgb(170, 244, 219);
+
+  margin: 20px;
+  margin-top: 200px;
+  /* margin: 20px 20px;
+  margin: 20px 20px 20px;
+  margin: 20px 20px 20px 20px; */
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+
+  margin-bottom: 200px;
+}
+
+.small {
+  background-color: #CF6868;
+}
+
+.circle {
+  height: 100px;
+  width: 100px;
+  padding: 20px;
+  border-width: 10px;
+  margin: 20px;
+  border-radius: 50%;
+}
+
+.contentBox {
+  box-sizing: content-box;
+}
+
+.borderBox {
+  box-sizing: border-box;
+}
+
+.oval {
+  height: 50px;
+  width: 100px;
+  border-radius: 50%;
+}
+
+.noOval {
+  height: 100px;
+  width: 100px;
+  border-radius: 50px 25px 10px 5px;
+}

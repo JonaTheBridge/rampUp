@@ -1,0 +1,53 @@
+p {
+  font-size: 30px;
+}
+
+.timesNewRoman {
+  font-family: 'Times New Roman';
+}
+
+.arial {
+  font-family: Arial;
+}
+
+.verdana {
+  font-family: Verdana;
+}
+
+.doubleSize {
+  font-size: 60px;
+}
+
+.toBold {
+  font-weight: bold;
+}
+
+.toCursive {
+  font-style: italic;
+}
+
+.alignCenter {
+  text-align: center;
+}
+
+.toUppercase {
+  text-transform: uppercase;
+}
+
+.square {
+  width: 100px;
+  height: 100px;
+  border: solid 1px black;
+  margin-bottom: 500px;
+}
+
+.overflow {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.underline {
+  text-decoration: underline;
+  color: blue;
+}

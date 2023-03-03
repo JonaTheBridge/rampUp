@@ -1,0 +1,17 @@
+crear user en github (explicar github (gitlab, bitbucket) vs git)
+crear repo con gitignore
+añadir compañero al repo
+git clone (explicar remoto y local)
+crear nueva rama --
+crear readme.md
+add, commit y push
+crear PR
+revisar y aprobar PR
+
+pull (tanto owner como compañero)
+add, commit, push y PR del compañero
+add, commit, push y PR del owner
+
+revisar y aprobar PR del compañero
+resolución de conflictos
+git cola

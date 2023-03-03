@@ -1,0 +1,81 @@
+html * {
+  margin: 0;
+}
+
+.square {
+  height: 100px;
+  width: 100px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: black;
+}
+
+body > div > div {
+  display: inline-block;
+  vertical-align: top;
+}
+
+body > div + div { /* + = hermano */
+  margin-bottom: 10px;
+}
+
+.firstChildRow :first-child {
+  color: red;
+  border-color: red;
+}
+
+.lastChildRow :last-child {
+  color: red;
+  border-color: red;
+}
+
+.oddRow :nth-child(odd) {
+  color: red;
+  border-color: red;
+}
+
+.evenRow :nth-child(even) {
+  color: red;
+  border-color: red;
+}
+
+/* <An+B> => A = step, B = start, n = index */
+.ownOddRow :nth-child(2n+3) {
+  color: red;
+  border-color: red;
+}
+
+.ownEvenRow :nth-child(2n+4) {
+  color: red;
+  border-color: red;
+}
+
+.fourthElementRow :nth-child(4) {
+  color: red;
+  border-color: red;
+}
+
+.podiumRow :nth-child(-n+3) {
+  /* step = -1, start = 3, n = index */
+  color: red;
+  border-color: red;
+}
+
+.descenseRow :nth-last-child(-n+3) {
+  color: red;
+  border-color: red;
+}
+
+.actions:hover {
+  color: blue;
+  border-color: blue;
+}
+
+.actions:active {
+  color: green;
+  border-color: green;
+}
+
+a:visited {
+  color: green;
+}

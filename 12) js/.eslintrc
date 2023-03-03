@@ -1,0 +1,22 @@
+{
+  "extends": ["eslint:recommended"],
+  "env": {
+    "es6": true,
+    "browser": true
+  },
+  "parserOptions": {
+    "sourceType": "module",
+    "ecmaVersion": 2018
+  },
+  "rules": {
+    "indent": ["error", 2],
+    "no-console": "warn",
+    "semi": ["error", "always"],
+    "prefer-const": "error",
+    "quotes": ["error", "single"],
+    "array-bracket-spacing": "error",
+    "space-in-parens": "error",
+    "spaced-comment": "error",
+    "no-trailing-spaces": "error"
+  }
+}

@@ -1,0 +1,101 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+/* CONTAINER */
+
+.container {
+  border: solid 1px black;
+  margin-bottom: 200px;
+
+  display: flex;
+}
+
+.row {
+  width: 100%;
+  height: 200px;
+
+  justify-content: flex-start; /* main axis. */
+
+  align-items: flex-start; /* cross axis. */
+  /* align-items: stretch; */
+}
+
+.square {
+  width: 400px;
+  height: 400px;
+  /* align-content: center; */
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.column {
+  width: 200px;
+  height: 600px;
+  flex-direction: column;
+}
+
+/* ITEMS */
+
+.item {
+  width: 100px;
+  height: 100px;
+  border: solid 1px blue;
+
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+
+.xl {
+  width: 150px;
+  height: 150px;
+}
+
+.alignSelf {
+  align-self: center;
+  order: 1;
+}
+
+.last {
+  order: 2;
+}
+
+.basis {
+  width: 600px;
+  height: 600px;
+  /* flex-direction: column; */
+}
+
+.basis > div {
+  flex-basis: 20%;
+  /* width: 20%; */
+}
+
+.growOne {
+  flex-grow: 1;
+}
+
+.growTwo {
+  flex-grow: 2;
+}
+
+.shrinkOne {
+  flex-shrink: 1;
+}
+
+.shrinkTwo {
+  flex-shrink: 2;
+}
+
+.shrinkThree {
+  flex-shrink: 3;
+}
+
+.shrinkZero {
+  flex-shrink: 0;
+}

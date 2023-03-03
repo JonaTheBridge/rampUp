@@ -1,0 +1,69 @@
+body {
+  margin: 0;
+}
+
+.square {
+  height: 400px;
+  width: 400px;
+  font-size: 25px;
+  display: inline-block;
+  border-width: 5px;
+  border-style: solid;
+}
+
+.absolute {
+  border-color: red;
+  color: red;
+  position: absolute;
+  top: 5px;
+  right: 420px;
+}
+
+.absoluteNegative {
+  border-color: red;
+  color: red;
+  position: absolute;
+  top: 5px;
+  right: -420px;
+}
+
+.fixed {
+  border-color: lightgreen;
+  color: lightgreen;
+  position: fixed;
+  top: 5px;
+  right: 5px;
+}
+
+.static {
+  border-color: white;
+  background-color: grey;
+  position: static;
+  top: 500px;
+  right: 500px;
+}
+
+.sticky {
+  border-color: rgb(255, 50, 200);
+  color: rgb(255, 50, 200);
+  position: sticky;
+  top: 200px;
+  left: 200px;
+}
+
+.relative {
+  border-color: rgb(0, 255, 220);
+  color: rgb(0, 255, 220);
+  position: relative;
+  top: 50px;
+  left: 50px;
+}
+
+.zIndex {
+  z-index: 2;
+  top: 250px;
+  left: -575px;
+  color: black;
+  border-color: blue;
+  background-color: blue;
+}

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="stylesheet" href="./class.css">
+  </head>
+
+  <body>
+    <h1>Forms</h1>
+    <h2>Simple form (open dev tools & select network tab)</h2>
+    <form action="./secondary.html" method="POST">
+      <div class="inputContainer">
+        <label for="myInput">Input text with placeholder</label>
+        <input id="myInput" type="text" name="theInputName" />
+      </div>
+      <div class="submitContainer">
+        <!-- <input type="submit" value="Enviar"/> -->
+        <button type="submit">Enviar</button>
+      </div>
+    </form>
+
+    <h2>Input types</h2>
+    <form action="./secondary.html" method="POST">
+      <div class="inputContainer">
+        <label for="withPlaceholder">Input text with placeholder</label>
+        <input id="withPlaceholder" type="text" name="textName" placeholder="Insert text...">
+      </div>
+
+      <div class="inputContainer">
+        <label for="withDefaultValue">Input text with default value</label>
+        <input id="withDefaultValue" type="text" name="defaultTextName" value="Default value">
+      </div>
+
+      <div class="inputContainer">
+        <label for="passwordId">Password</label>
+        <input id="passwordId" type="password" name="passwordName">
+      </div>
+
+      <div class="inputContainer">
+        <label for="numberId">Number</label>
+        <input id="numberId" type="number" name="numberName" step="2">
+      </div>
+
+      <div class="inputContainer">
+        <label for="rangeId">Range</label>
+        <input id="rangeId" name="rangeName" type="range" step="10">
+      </div>
+
+      <div class="inputContainer">
+        <p>Checkbox) Marque cualquiera de las siguientes casillas:</p>
+        <input id="firstCheckboxId" name="checkboxName" type="checkbox" value="firstCheckboxValue">
+        <label for="firstCheckboxId">Checkbox 1</label>
+        <input id="secondCheckboxId" name="checkboxName" type="checkbox" value="secondCheckboxValue">
+        <label for="secondCheckboxId">Checkbox 2</label>
+      </div>
+
+      <div class="inputContainer">
+        <p>Radio) Elija una opción:</p>
+        <input type="radio" id="radioYesId" name="radioName" value="yes">
+        <label for="radioYesId">Si</label>
+        <input type="radio" id="radioNoId" name="radioName" value="no">
+        <label for="radioNoId">No</label>
+      </div>
+
+      <div class="inputContainer">
+        <label for="selectId">Select) Elija una opción</label>
+        <select id="selectId" name="selectName">
+          <option value="option1">Option 1</option>
+          <option value="option2">Option 2</option>
+          <option value="option3">Option 3</option>
+          <option value="option4">Option 4</option>
+          <option value="option5">Option 5</option>
+        </select>
+      </div>
+
+      <div class="inputContainer">
+        <label for="colorId">Datalist) Elije un color</label>
+        <input type="text" list="datalistId" id="colorId" name="colorName">
+
+        <datalist id="datalistId">
+          <option value="amarillo">
+          <option value="azul">
+          <option value="blanco">
+          <option value="gris">
+          <option value="marron">
+          <option value="morado">
+          <option value="naranja">
+          <option value="negro">
+          <option value="rojo">
+          <option value="rosa">
+          <option value="verde">
+        </datalist>
+      </div>
+
+      <div class="inputContainer">
+        <label for="textareaId">Textarea</label>
+        <textarea id="textareaId" name="textareaName" rows="5" cols="30"></textarea>
+      </div>
+
+      <div class="submitContainer">
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+
+    <h2>HTML Validations</h2>
+    <form action="secondary.html" method="POST">
+      <div class="inputContainer">
+        <label for="requiredId">Required</label>
+        <input id="requiredId" name="requiredName" type="text" required>
+      </div>
+
+      <div class="inputContainer">
+        <label for="minMaxNumberId">Min/max (0/5) Number</label>
+        <input id="minMaxNumberId" type="number" name="minMaxNumberName" step="1" min="0" max="5">
+      </div>
+
+      <div class="inputContainer">
+        <label for="minMaxRangeId">Max/min (0/100)Range</label>
+        <input id="minMaxRangeId" name="minMaxRangeName" type="range" step="10" min="0" max="100">
+      </div>
+  
+      <div class="inputContainer">
+        <label for="lengthId">Length (2/5)</label>
+        <input id="lengthId" name="lengthName" type="text" minlength="2" maxlength="5">
+      </div>
+
+      <div class="inputContainer">
+        <label for="patternId">Pattern ([6][0-9]{8})</label>
+        <input id="patternId" name="patternName" type="text" pattern="[6][0-9]{8}">
+      </div>
+
+      <div class="submitContainer">
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+  </body>
+
+</html>

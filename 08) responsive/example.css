@@ -1,0 +1,11 @@
+body > div {
+  height: 100px;
+  width: 100px;
+  border: 1px solid black;
+}
+
+@media (min-device-width: 391px) {
+  body > div {
+    display: inline-block;
+  }
+}

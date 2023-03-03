@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Selectors</title>
+    <link rel="stylesheet" href="./class.css">
+  </head>
+  <body>
+    <div class="firstChildRow">
+      <div class="square">:first-child</div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+    </div>
+
+    <div class="lastChildRow">
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square">:last-child</div>
+    </div>
+
+    <div class="oddRow">
+      <div class="square">:nth-child(odd)</div>
+      <div class="square"></div>
+      <div class="square">:nth-child(odd)</div>
+      <div class="square"></div>
+      <div class="square">:nth-child(odd)</div>
+      <div class="square"></div>
+      <div class="square">:nth-child(odd)</div>
+    </div>
+
+    <div class="evenRow">
+      <div class="square"></div>
+      <div class="square">:nth-child(even)</div>
+      <div class="square"></div>
+      <div class="square">:nth-child(even)</div>
+      <div class="square"></div>
+      <div class="square">:nth-child(even)</div>
+      <div class="square"></div>
+    </div>
+
+    <div class="ownOddRow">
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square">:nth-child(2n+3)</div>
+      <div class="square"></div>
+      <div class="square">:nth-child(2n+3)</div>
+      <div class="square"></div>
+      <div class="square">:nth-child(2n+3)</div>
+    </div>
+
+    <div class="ownEvenRow">
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square">:nth-child(2n+4)</div>
+      <div class="square"></div>
+      <div class="square">:nth-child(2n+4)</div>
+      <div class="square"></div>
+    </div>
+
+    <div class="fourthElementRow">
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square">fourthElement</div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+    </div>
+
+    <div class="podiumRow">
+      <div class="square">1</div>
+      <div class="square">2</div>
+      <div class="square">3</div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+    </div>
+
+    <div class="descenseRow">
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square">5</div>
+      <div class="square">6</div>
+      <div class="square">7</div>
+    </div>
+
+    <div class="square actions">Play with me</div>
+
+    <a href="https://developer.mozilla.org/es/docs/Web/CSS/CSS_Selectors">
+      More info
+    </a>
+  </body>
+</html>

@@ -1,0 +1,82 @@
+:root {
+  --paddingSize: 60px;
+}
+
+.circle {
+  border-radius: 50%;
+  /* padding: 60px; */
+  padding: var(--paddingSize)
+}
+
+.area1 {
+  background-color: black;
+  /* width: 480px;
+  height: 480px; */
+  width: calc(var(--paddingSize) * 8);
+  height: calc(var(--paddingSize) * 8);
+}
+
+.area2 {
+  background-color: white;
+  width: 360px;
+  height: 360px;
+  /* width: calc(var(--paddingSize) * 6);
+  height: calc(var(--paddingSize) * 6); */
+}
+
+.area3 {
+  background-color: blue;
+  width: 240px;
+  height: 240px;
+  /* width: calc(var(--paddingSize) * 4);
+  height: calc(var(--paddingSize) * 4); */
+}
+
+.area4 {
+  background-color: red;
+  width: 120px;
+  height: 120px;
+  /* width: calc(var(--paddingSize) * 2);
+  height: calc(var(--paddingSize) * 2); */
+}
+
+.area5 {
+  background-color: yellow;
+  width: 0px;
+  height: 0px;
+}
+
+.area1-borderBox {
+  background-color: black;
+  width: 600px;
+  height: 600px;
+  box-sizing: border-box;
+}
+
+.area2-borderBox {
+  background-color: white;
+  width: 480px;
+  height: 480px;
+  box-sizing: border-box;
+}
+
+.area3-borderBox {
+  background-color: blue;
+  width: 360px;
+  height: 360px;
+  box-sizing: border-box;
+}
+
+.area4-borderBox {
+  background-color: red;
+  width: 240px;
+  height: 240px;
+  box-sizing: border-box;
+}
+
+.area5-borderBox {
+  background-color: yellow;
+  width: 0px;
+  height: 0px;
+  box-sizing: border-box;
+}

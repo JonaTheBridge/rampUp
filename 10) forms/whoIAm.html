@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="stylesheet" href="./class.css">
+  </head>
+
+  <body>
+    <h2>Who I Am</h2>
+    <form action="./secondary.html" method="POST">
+
+      <div class="inputContainer">
+        <p>¿Está vivo?</p>
+        <input type="radio" id="radioYesId" name="isAlive" value="yes">
+        <label for="radioYesId">Si</label>
+        <input type="radio" id="radioNoId" name="isAlive" value="no">
+        <label for="radioNoId">No</label>
+      </div>
+
+      <div class="inputContainer">
+        <label for="ageId">Edad</label>
+        <input id="ageId" type="number" name="age" step="1">
+      </div>
+
+      <div class="inputContainer">
+        <label for="centuryId">Es del siglo...</label>
+        <input id="centuryId" name="century" type="range" min="0" max="21" value="15">
+      </div>
+
+      <div class="inputContainer">
+        <label for="bornsCountryId">¿Donde nació?</label>
+        <select id="bornsCountryId" name="bornsCountry">
+          <option value="spain">España</option>
+          <option value="france">Francia</option>
+          <option value="england">Inglaterra</option>
+          <option value="italy">Italia</option>
+          <option value="germany">Alemania</option>
+        </select>
+      </div>
+
+      <div class="inputContainer">
+        <label for="periodId">Elije el periodo al que pertenece</label>
+        <input type="text" list="periodListId" id="periodId" name="period">
+
+        <datalist id="periodListId">
+          <option value="romanico">
+          <option value="gotico">
+          <option value="renacimiento">
+          <option value="neoclasicismo">
+          <option value="barroco">
+          <option value="neoclasicismo">
+          <option value="romanticismo">
+        </datalist>
+      </div>
+
+      <div class="inputContainer">
+        <p>Oficio/s</p>
+        <input id="soldierId" name="job" type="checkbox" value="soldier">
+        <label for="soldierId">Soldado</label>
+        <input id="kingId" name="job" type="checkbox" value="king">
+        <label for="kingId">Rey</label>
+        <input id="painterId" name="job" type="checkbox" value="painter">
+        <label for="painterId">Pintor</label>
+        <input id="farmerId" name="job" type="checkbox" value="farmer">
+        <label for="farmerId">Granjero</label>
+        <input id="sculptorId" name="job" type="checkbox" value="sculptor">
+        <label for="sculptorId">Escultor</label>
+      </div>
+
+      <div class="inputContainer">
+        <label for="wikiDescriptionId">10 primeras palabras de wikipedia</label>
+        <textarea id="wikiDescriptionId" name="wikiDescription" rows="5" cols="30"></textarea>
+      </div>
+
+      <div class="inputContainer">
+        <label for="pieceId">Escribe algo que le hiciera famoso</label>
+        <input id="pieceId" type="text" name="piece" placeholder="Inserte obra">
+      </div>
+
+      <div class="inputContainer">
+        <label for="answerId">Nombre del personaje</label>
+        <input id="answerId" type="password" name="answer">
+      </div>
+
+      <div class="submitContainer">
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+  </body>
+
+</html>

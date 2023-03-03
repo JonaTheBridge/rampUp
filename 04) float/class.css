@@ -1,0 +1,26 @@
+.square {
+  height: 100px;
+  width: 100px;
+  border: lightseagreen solid 5px;
+  font-size: 16px;
+}
+
+.floatRight {
+  float: right;
+}
+
+.floatLeft {
+  float: left;
+}
+
+.clearRight {
+  clear: right;
+}
+
+.clearLeft {
+  clear: left;
+}
+
+.clearBoth {
+  clear: both;
+}

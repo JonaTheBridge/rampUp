@@ -1,0 +1,66 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  /* 16px by default */
+}
+
+body {
+  margin: 0;
+}
+
+.square {
+  border-width: 5px;
+  border-style: solid;
+}
+
+.l {
+  /* width: 600px;
+  height: 600px; */
+  border-color: green;
+
+  /* width: 50%; */
+  /* Este no */
+  /* height: 50%; */
+
+  width: 100vw;
+  height: 100vh;
+
+  /* 1em = 10px => 2em = 20px */
+  /* font-size: 2em; */
+  font-size: 2rem;
+}
+
+.m {
+  border-color: orange;
+  /* width: 300px;
+  height: 300px; */
+
+  /* width: 50%;
+  height: 50%; */
+
+  width: 50vw;
+  height: 50vh;
+
+  /* 1em = 20px => 2em = 40px */
+  /* font-size: 2em; */
+  font-size: 2rem;
+}
+
+.s {
+  border-color: red;
+  /* width: 150px;
+  height: 150px; */
+
+  /* width: 50%;
+  height: 50%; */
+
+  width: 25vw;
+  height: 25vh;
+
+  /* 1em = 40px => 2em = 80px */
+  /* font-size: 2em; */
+  font-size: 2rem;
+}

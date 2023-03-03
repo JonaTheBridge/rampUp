@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"> <!-- codificación de caracteres (UTF-8 === estándar) -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- compat nav (IE como edge) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+    <link rel="stylesheet" href="./class.css">
+  </head>
+  <body>
+    <h1>Display: flex</h1>
+    <h2>justify-content & align-items</h2>
+    <div class="container row">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+      <div class="item">5</div>
+    </div>
+
+    <h2>align-content & flex-wrap</h2>
+    <div class="container square">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item xl">3</div>
+      <div class="item">4</div>
+      <div class="item">5</div>
+    </div>
+
+    <h2>flex-direction, reverse & start vs flex-start</h2>
+    <div class="container column">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+      <div class="item">5</div>
+    </div>
+
+    <h2>align-self & order</h2>
+    <div class="container row">
+      <div class="item">1</div>
+      <div class="item alignSelf">2</div>
+      <div class="item alignSelf last">3</div>
+      <div class="item alignSelf">4</div>
+      <div class="item">5</div>
+    </div>
+
+    <h2>flex-basis</h2>
+    <div class="container row basis">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+      <div class="item">5</div>
+    </div>
+
+    <h2>flex-grow & flex-shrink</h2>
+    <div class="container row">
+      <div class="item growOne shrinkOne">1</div>
+      <div class="item growTwo shrinkTwo">2</div>
+      <div class="item shrinkThree">3</div>
+      <div class="item shrinkZero">4</div>
+      <div class="item">5</div>
+    </div>
+  </body>
+</html>

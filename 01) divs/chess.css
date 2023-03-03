@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.board {
+  width: 600px;
+  height: 600px;
+  background-color: brown;
+  border: darkgoldenrod double 10px;
+  padding: 50px;
+}
+
+.board * {
+  width: 75px;
+  height: 75px;
+  display: inline-block;
+  margin: -2px;
+}
+
+.cell-black {
+  background-color: black;
+}
+
+.cell-white {
+  background-color: white;
+}
