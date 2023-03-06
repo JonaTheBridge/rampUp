@@ -4,6 +4,12 @@ const analogicHours = 3;
 const analogicMinutes = 3;
 const isPm = false;
 
+const myClock = {
+  analogicHours: 3,
+  analogicMinutes: 3,
+  isPm: false,
+};
+
 let digitalHour;
 let digitalMinutes;
 

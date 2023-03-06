@@ -47,3 +47,28 @@ for (let numberToAnalize = 0; numberToAnalize < maxLaps; numberToAnalize++) {
     console.log('___ isPrime', numberToAnalize);
   }
 }
+
+// *************************
+
+function getIfIsPrime(number) {
+  let isPrime = true;
+  for (let divisor = 2; divisor < number; divisor++) {
+    const rest = number % divisor;
+    const isDivisible = rest === 0;
+    if (isDivisible) {
+      isPrime = false;
+      break;
+    }
+  }
+
+  return isPrime;
+}
+
+const maxLaps = 20;
+for (let numberToAnalize = 0; numberToAnalize < maxLaps; numberToAnalize++) {
+  const prime = getIfIsPrime(numberToAnalize);
+
+  if (prime) {
+    console.log('___ isPrime', numberToAnalize);
+  }
+}
