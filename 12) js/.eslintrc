@@ -9,7 +9,7 @@
     "ecmaVersion": 2018
   },
   "rules": {
-    "indent": ["error", 2],
+    "indent": ["error", 2, { "SwitchCase": 1 }],
     "no-console": "warn",
     "semi": ["error", "always"],
     "prefer-const": "error",
@@ -17,6 +17,7 @@
     "array-bracket-spacing": "error",
     "space-in-parens": "error",
     "spaced-comment": "error",
-    "no-trailing-spaces": "error"
+    "no-trailing-spaces": "error",
+    "no-var": "error"
   }
 }
