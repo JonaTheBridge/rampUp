@@ -1,3 +1,117 @@
+let aircraftCarrier = 5;
+let vessel = 4;
+let submarine = 3;
+let cruise = 2;
+let boat = 1;
+
+
+const water = '~';
+const hit = 'X';
+const sunk = '*';
+
+const yCoordinates = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J'];
+
+const myBoard = [
+  ['1', '', '2', '2', '', '3', '3', '3', '', ''],
+  ['', '', '', '', '', '', '', '', '', ''],
+  ['4', '4', '4', '4', '', '', '', '', '', ''],
+  ['', '', '', '', '', '', '', '', '', ''],
+  ['5', '5', '5', '5', '5', '', '', '', '', ''],
+  ['', '', '', '', '', '', '', '', '', ''],
+  ['', '', '', '', '', '', '', '', '', ''],
+  ['', '', '', '', '', '', '', '', '', ''],
+  ['', '', '', '', '', '', '', '', '', ''],
+  ['', '', '', '', '', '', '', '', '', ''],
+];
+
+const IABoard = [
+  [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '],
+  [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '],
+  [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '],
+  [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '],
+  [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '],
+  [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '],
+  [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '],
+  [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '],
+  [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '],
+  [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '],
+];
+
+function printIABoard() {
+  for (let i = 0; i < IABoard.length; i++) {
+    console.log(yCoordinates[i] + ') ' + IABoard[i].join(' | '));
+  }
+}
+
+function IAShot(row, column) {
+  const symbol = myBoard[row][column];
+  switch (symbol) {
+    case '1':
+      boat--;
+      IABoard[row][column] = sunk;
+      break;
+    case '2':
+      cruise--;
+      if (cruise) {
+        IABoard[row][column] = hit;
+      } else {
+        IABoard[row][column] = sunk;
+      }
+
+      break;
+    case '3':
+      submarine--;
+      if (submarine) {
+        IABoard[row][column] = hit;
+      } else {
+        IABoard[row][column] = sunk;
+      }
+
+      break;
+    case '4':
+      vessel--;
+      if (vessel) {
+        IABoard[row][column] = hit;
+      } else {
+        IABoard[row][column] = sunk;
+      }
+
+      break;
+    case '5':
+      aircraftCarrier--;
+      if (aircraftCarrier) {
+        IABoard[row][column] = hit;
+      } else {
+        IABoard[row][column] = sunk;
+      }
+
+      break;
+    default:
+      IABoard[row][column] = water;
+      break;
+  }
+
+  console.log(yCoordinates[row] + '' +  (column + 1) + ' === ' + IABoard[row][column]);
+}
+
+let turn = 1;
+while (boat || cruise || submarine || vessel || aircraftCarrier) {
+  const row = Math.floor(Math.random() * 10);
+  const column = Math.floor(Math.random() * 10);
+  if (IABoard[row][column] === ' ') {
+    console.log('----- Turn ' + turn + ' -----');
+    IAShot(row, column);
+    printIABoard();
+    turn++;
+  }
+}
+
+
+
+
+
+
+
 // https://es.wikipedia.org/wiki/Batalla_naval_(juego)
 
 // 2 tableros de 10 x 10 (A-J vertical / 1-10 horizontal)
